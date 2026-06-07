@@ -1,4 +1,4 @@
-# Crio esse projeto com fins de simular um cenário real de  dados <br>
+# Crio esse projeto com fins de simular um cenário real de  dados 📊 <br>
 
 ## Planejando
 
@@ -11,7 +11,8 @@ A stack do projeto será local  📍 para isso será necessário utilizar:
 * Docker para encapsular
 * Supabase banco destino
 
-<image> 'Imagem'
+<img width="1426" height="520" alt="Image" src="https://github.com/user-attachments/assets/efc22944-8ddf-45f9-b61d-bf577542c57e" />
+
 
 ## Prática
 
@@ -43,9 +44,4 @@ Iniciar a configuração da **DAG** e utilizando o método de **Taskflow** méto
 
 
 
-
-
-
-
-
-# Weather_pipeline
+# Referência de projeto de @vbluiza
