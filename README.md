@@ -1,18 +1,36 @@
-# Crio esse projeto com fins de simular um cenário real de  dados 📊 <br>
+# Arquitetura de Dados Weather 📊 <br>
+
+## 📖 Visão Geral
+Este projeto tem como objetivo a construção de um pipeline de dados robusto e local para extração, transformação e carga (ETL) de dados meteorológicos. O foco é a implementação de arquitetura de dados moderna utilizando contêinerização e orquestração de alta performance.
+
 
 ## Planejando
 
 Primeiro precisamos entender qual o processo, estrutura e ferramentas serão utilizadas
 
-A stack do projeto será local  📍 para isso será necessário utilizar:
+**🛠 Stack Tecnológica**
 
-* Linguagem de programação **Python**
-* Orquestração: **Airflow** 
-* Docker para encapsular
-* Supabase banco destino
+* Linguagem: Python 3.x
+* Orquestração: Apache Airflow (Taskflow API)
+* Contêineres: Docker & Docker Compose
+* Gerenciamento de Pacotes: uv (Alta performance em resolução de dependências)
+* Armazenamento: Supabase (PostgreSQL)
 
 <img width="1426" height="520" alt="Image" src="https://github.com/user-attachments/assets/efc22944-8ddf-45f9-b61d-bf577542c57e" />
 
+🏗 Estrutura do Projeto
+O projeto segue uma arquitetura modular para garantir legibilidade e manutenção:
+
+Weather/
+├── dags/           # Definição das DAGs do Airflow
+├── src/            # Lógica de negócio (ETL)
+│   ├── extract.py
+│   ├── transform.py
+│   └── load.py
+├── data/           # Armazenamento temporário local
+├── logs/           # Logs de execução do Airflow
+├── .env            # Variáveis de ambiente (API_KEY, Credenciais)
+└── requirements.txt
 
 ## Prática
 
@@ -43,5 +61,5 @@ Neste projeto vou utilizar a imagem oficial do airflow, facilitando o processo d
 Iniciar a configuração da **DAG** e utilizando o método de **Taskflow** método mais moderno e eficiente. 
 
 
-
-# Referência de projeto de @vbluiza
+🔗 Referências
+@vbluiza
