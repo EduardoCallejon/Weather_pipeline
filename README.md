@@ -17,10 +17,14 @@ Primeiro precisamos entender qual o processo, estrutura e ferramentas serão uti
 * Armazenamento: Supabase (PostgreSQL)
 
 <img width="1426" height="520" alt="Image" src="https://github.com/user-attachments/assets/efc22944-8ddf-45f9-b61d-bf577542c57e" />
+<br>
+<br>
+<br>
 
 🏗 Estrutura do Projeto
 O projeto segue uma arquitetura modular para garantir legibilidade e manutenção:
 
+```text
 Weather/
 ├── dags/           # Definição das DAGs do Airflow
 ├── src/            # Lógica de negócio (ETL)
@@ -31,6 +35,7 @@ Weather/
 ├── logs/           # Logs de execução do Airflow
 ├── .env            # Variáveis de ambiente (API_KEY, Credenciais)
 └── requirements.txt
+```
 
 ## Prática
 
@@ -48,7 +53,7 @@ ir ao site [text](https://openweathermap.org/users/sign_in)
 Extrair uma 'API_KEY', inclui-la em '.env'
 
 Dentro da pasta **SRC**, criar os arquivos ['extract','transform','load'], que são os processos necessários para o pipeline
-### Para esse projeto não será necessário atualização incremental
+***Para esse projeto não será necessário atualização incremental***
 
 ## Testes
 
