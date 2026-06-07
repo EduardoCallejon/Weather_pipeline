@@ -1,0 +1,10 @@
+uv.lock
+config
+logs
+.python-version
+pyproject.toml
+__pycache__
+notebooks
+plugins
+desenho_tecnico.png
+.env
