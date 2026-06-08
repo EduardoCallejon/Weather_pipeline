@@ -58,10 +58,13 @@ Dentro da pasta **SRC**, criar os arquivos ['extract','transform','load'], que s
 ## Testes
 
 Após a criação dos códigos, funções, é hora de testar todo o processo e verificar se está enviando so dados corretos para o banco.
+* Teste de Padrão -  'Verificar se as colunas que foram alteradas se mantiveram.'
+* Teste de Qualidade - 'Validar se existem alguma maneira de acelerar o processo'
 
 ## Montar a estrutura do airflow
 
 Neste projeto vou utilizar a imagem oficial do airflow, facilitando o processo de configuração.
+disponível em [Airflow](https://airflow.apache.org/docs/apache-airflow/3.1.8/howto/docker-compose/index.html)
 
 Iniciar a configuração da **DAG** e utilizando o método de **Taskflow** método mais moderno e eficiente. 
 
